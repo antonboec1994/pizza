@@ -1,0 +1,54 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #fe5f1e;
+    overflow: hidden;
+    a {
+      color: #fe5f1e;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  :global {
+    .previous {
+      a {
+        &:hover {
+          color: #a83f15;
+          opacity: 0.7;
+        }
+      }
+    }
+    .next {
+      a {
+        &:hover {
+          color: #a83f15;
+          opacity: 0.7;
+        }
+      }
+    }
+    .selected {
+      a {
+        color: #fff;
+        background-color: #fe5f1e;
+        border: transparent;
+      }
+    }
+  }
+}

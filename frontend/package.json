@@ -1,0 +1,43 @@
+{
+	"name": "react-pizza",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "concurrently \"npm run server\" \"vite\"",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"server": "node server/server.js"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^2.8.2",
+		"ahooks": "^3.7.5",
+		"axios": "^1.2.6",
+		"localforage": "^1.10.0",
+		"lodash.debounce": "^4.0.8",
+		"match-sorter": "^6.3.1",
+		"qs": "^6.11.0",
+		"react": "^19.1.0",
+		"react-content-loader": "^6.2.0",
+		"react-dom": "^19.1.0",
+		"react-paginate": "^8.1.4",
+		"react-redux": "^9.2.0",
+		"react-router-dom": "^6.6.2",
+		"sort-by": "^0.0.2",
+		"validator": "^13.9.0"
+	},
+	"devDependencies": {
+		"@types/lodash.debounce": "^4.0.7",
+		"@types/node": "^22.15.29",
+		"@types/qs": "^6.14.0",
+		"@types/react": "^19.1.6",
+		"@types/react-dom": "^19.1.6",
+		"@types/react-input-mask": "^3.0.6",
+		"@vitejs/plugin-react": "^4.5.1",
+		"concurrently": "^9.1.2",
+		"sass": "^1.89.1",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5"
+	}
+}

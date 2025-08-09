@@ -1,0 +1,53 @@
+$black: #232323;
+$background: #ffdf8c;
+$gray-line: #f6f6f6;
+$orange: #fe5f1e;
+$container-width: 90%;
+$duration: 0.15s;
+
+html {
+  position: relative;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./assets/images/main-bg.jpg);
+  height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 1400px;
+  box-shadow: 0px 0px 27px 6px rgba(34, 60, 80, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+
+  &--cart {
+    max-width: 820px;
+    margin: 90px auto;
+    .content__title {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
